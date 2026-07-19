@@ -14,9 +14,9 @@ type Message = {
 
 const starters = [
   "Night lot merch for cold weather",
-  "Sunrise photo meet near Phoenix",
+  "Sunrise photo meet in Greenfield",
   "Cheap gift under $20",
-  "Cruise meet in San Diego",
+  "Cruise meet in Hancock County",
 ];
 
 export function AiAssistant() {
@@ -24,7 +24,7 @@ export function AiAssistant() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      text: "I’m the Greenfield Street Scene fit finder. Ask for a meet vibe, a city, or what you want to wear to the lot.",
+      text: "I’m the Greenfield Street Scene fit finder — based in Greenfield, Indiana. Ask for a meet vibe or what to wear to the lot.",
     },
   ]);
   const [pending, setPending] = useState(false);
@@ -149,7 +149,7 @@ export function AiAssistant() {
             id="ai-prompt"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="e.g. cold night meet in Denver + hoodie"
+            placeholder="e.g. cold night meet in Greenfield + hoodie"
             disabled={pending}
           />
           <button type="submit" className="btn btn-primary" disabled={pending}>

@@ -5,6 +5,10 @@ import { seedMeets } from "../src/modules/meets/seed";
 const prisma = new PrismaClient();
 
 async function main() {
+  // Replace meet calendar cleanly when locale/content changes
+  await prisma.meetRsvp.deleteMany();
+  await prisma.meet.deleteMany();
+
   for (const product of seedProducts) {
     await prisma.product.upsert({
       where: { slug: product.slug },

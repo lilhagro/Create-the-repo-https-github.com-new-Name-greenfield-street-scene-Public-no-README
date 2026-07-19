@@ -30,7 +30,7 @@ export function Header() {
       <div className="site-header__inner">
         <Link href="/" className="brand-mark" aria-label="Greenfield Street Scene home">
           <span className="brand-mark__word">GREENFIELD</span>
-          <span className="brand-mark__sub">STREET SCENE · MEETS · MERCH</span>
+          <span className="brand-mark__sub">GREENFIELD, IN · MEETS · MERCH</span>
         </Link>
         <nav className="site-nav" aria-label="Primary">
           {links.map((link) => {

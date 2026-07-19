@@ -84,13 +84,23 @@ export function recommendFromPrompt(
       if ((q.includes("cold") || q.includes("winter")) && m.tags.some((t) => ["cold", "winter"].includes(t))) {
         score += 3;
       }
-      if ((q.includes("la") || q.includes("los angeles")) && m.city.toLowerCase().includes("los angeles")) {
+      if (
+        (q.includes("greenfield") ||
+          q.includes("hancock") ||
+          q.includes("indiana") ||
+          q.includes("indy")) &&
+        (m.city.toLowerCase().includes("greenfield") ||
+          m.city.toLowerCase().includes("indianapolis") ||
+          m.tags.some((t) =>
+            ["greenfield", "indiana", "hancock", "indianapolis"].includes(t),
+          ))
+      ) {
         score += 4;
       }
-      if (q.includes("phoenix") && m.city.toLowerCase().includes("phoenix")) score += 4;
-      if (q.includes("dallas") && m.city.toLowerCase().includes("dallas")) score += 4;
-      if (q.includes("denver") && m.city.toLowerCase().includes("denver")) score += 4;
-      if ((q.includes("san diego") || q.includes("sd")) && m.city.toLowerCase().includes("san diego")) {
+      if (
+        (q.includes("indianapolis") || q.includes("indy")) &&
+        m.city.toLowerCase().includes("indianapolis")
+      ) {
         score += 4;
       }
       return { m, score };

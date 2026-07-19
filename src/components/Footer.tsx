@@ -10,7 +10,7 @@ export function Footer() {
             STREET SCENE
           </p>
           <p className="muted">
-            Merch and meets for people who show up when the lot lights flicker on.
+            Greenfield, Indiana — merch and meets for people who show up when the lot lights flicker on.
           </p>
         </div>
         <div>
@@ -23,9 +23,9 @@ export function Footer() {
           </div>
         </div>
         <div>
-          <p className="footer-label">Note</p>
+          <p className="footer-label">Based in</p>
           <p className="muted">
-            Demo storefront — connect payments, inventory, and your OpenAI key when you’re ready to go live.
+            Greenfield, IN · Hancock County · Indy eastside when we go bigger.
           </p>
         </div>
       </div>

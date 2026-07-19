@@ -17,9 +17,9 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Greenfield Street Scene — Car Meets & Merch",
+  title: "Greenfield Street Scene — Car Meets & Merch | Greenfield, IN",
   description:
-    "AI-powered shop for Greenfield Street Scene — car meet culture and merch. Find the right drop and the right lot.",
+    "Greenfield, Indiana car meets and merch. Shop the drop, find local lots, and get AI Fit recommendations from Greenfield Street Scene.",
 };
 
 export default function RootLayout({

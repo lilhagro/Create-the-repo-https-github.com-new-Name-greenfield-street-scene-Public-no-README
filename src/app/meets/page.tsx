@@ -10,7 +10,7 @@ export default async function MeetsPage() {
         <p className="eyebrow">Meets</p>
         <h1>Lots, cruises, and early light</h1>
         <p>
-          Find a night lot, sunrise grid, or coastal roll. Details are sample events you can swap for your real calendar.
+          Hometown meets in Greenfield, Indiana — plus nearby Indy eastside when the crowd grows. Swap these samples for your real calendar anytime.
         </p>
       </header>
       <section className="section" style={{ paddingTop: "1.5rem" }}>

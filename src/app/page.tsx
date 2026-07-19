@@ -22,7 +22,7 @@ export default async function HomePage() {
           </p>
           <h1 className="hero__headline">Merch for the lot. Meets for the night.</h1>
           <p className="hero__support">
-            Shop the drop, find the meet, or ask the AI fit finder what to wear when the sodium lights kick on.
+            Born in Greenfield, Indiana — shop the drop, find the local meet, or ask AI Fit what to wear when the lot lights kick on.
           </p>
           <div className="cta-row">
             <Link href="/shop" className="btn btn-primary">
@@ -55,7 +55,7 @@ export default async function HomePage() {
           <p className="eyebrow">Upcoming meets</p>
           <h2>Show up where it counts</h2>
           <p className="lede">
-            Night lots, sunrise grids, and coastal cruises — pick a vibe and roll in.
+            Courthouse nights, US-40 sunrises, and Hancock County cruises — hometown meets around Greenfield.
           </p>
         </div>
         <div className="meet-grid">
