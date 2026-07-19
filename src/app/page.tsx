@@ -4,6 +4,7 @@ import { MeetCard } from "@/components/MeetCard";
 import { ProductCard } from "@/components/ProductCard";
 import { listFeaturedMeets } from "@/modules/meets/repository";
 import { listFeaturedProducts } from "@/modules/catalog/repository";
+import { PRINTIFY_STORE_URL } from "@/shared/config/links";
 
 export default async function HomePage() {
   const [featuredProducts, featuredMeets] = await Promise.all([
@@ -25,8 +26,16 @@ export default async function HomePage() {
             Born in Greenfield, Indiana — shop the drop, find the local meet, or ask AI Fit what to wear when the lot lights kick on.
           </p>
           <div className="cta-row">
-            <Link href="/shop" className="btn btn-primary">
+            <a
+              href={PRINTIFY_STORE_URL}
+              className="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Shop merch
+            </a>
+            <Link href="/shop" className="btn btn-ghost">
+              In-stock stickers
             </Link>
             <Link href="/meets" className="btn btn-ghost">
               Browse meets
@@ -40,13 +49,23 @@ export default async function HomePage() {
           <p className="eyebrow">Featured drop</p>
           <h2>Built for asphalt hours</h2>
           <p className="lede">
-            Tees, hoodies, and small goods that look right under lot lights — not conference-booth logos.
+            In-stock stickers ship from Greenfield. Full tees and hoodies live on our Printify store.
           </p>
         </div>
         <div className="product-grid">
           {featuredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
+        </div>
+        <div className="cta-row" style={{ marginTop: "1.5rem" }}>
+          <a
+            href={PRINTIFY_STORE_URL}
+            className="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open Printify merch store
+          </a>
         </div>
       </section>
 

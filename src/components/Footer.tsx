@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PRINTIFY_STORE_URL } from "@/shared/config/links";
 
 export function Footer() {
   return (
@@ -16,7 +17,10 @@ export function Footer() {
         <div>
           <p className="footer-label">Navigate</p>
           <div className="footer-links">
-            <Link href="/shop">Shop</Link>
+            <a href={PRINTIFY_STORE_URL} target="_blank" rel="noopener noreferrer">
+              Merch store
+            </a>
+            <Link href="/shop">In-stock stickers</Link>
             <Link href="/meets">Meets</Link>
             <Link href="/cart">Cart</Link>
             <Link href="/#assistant">AI Fit</Link>
