@@ -76,6 +76,7 @@ model Product {
   tagsJson    String   @default("[]")
   colorsJson  String   @default("[]")
   vibe        String
+  imageUrl    String?
   featured    Boolean  @default(false)
   active      Boolean  @default(true)
   createdAt   DateTime @default(now())

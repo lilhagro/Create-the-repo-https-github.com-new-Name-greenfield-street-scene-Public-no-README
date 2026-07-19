@@ -3,6 +3,38 @@ import { isProductCategory } from "@/modules/catalog/types";
 
 export const seedProducts: Product[] = [
   {
+    id: "p9",
+    slug: "317-shitbox-certified-blue",
+    name: "317 Shitbox Certified Sticker — Blue",
+    price: 15,
+    priceCents: 1500,
+    category: "stickers",
+    tagline: "Certified. Approved. 317.",
+    description:
+      "Die-cut “Certified Approved 317 Shitbox” sticker in light blue. In-stock Greenfield Street Scene drop — laptop, toolbox, water bottle, or mirror ready. Ships from Greenfield, Indiana.",
+    tags: ["sticker", "317", "shitbox", "indiana", "greenfield", "gift", "in-stock"],
+    colors: ["Light Blue"],
+    featured: true,
+    vibe: "317 shitbox",
+    image: "/products/317-shitbox-blue.png",
+  },
+  {
+    id: "p10",
+    slug: "317-shitbox-certified-black",
+    name: "317 Shitbox Certified Sticker — Black",
+    price: 15,
+    priceCents: 1500,
+    category: "stickers",
+    tagline: "Black ink. Zero excuses.",
+    description:
+      "Die-cut “Certified Approved 317 Shitbox” sticker in black and white. In-stock Greenfield Street Scene drop — same stamp energy, high-contrast finish. Ships from Greenfield, Indiana.",
+    tags: ["sticker", "317", "shitbox", "indiana", "greenfield", "gift", "in-stock"],
+    colors: ["Black / White"],
+    featured: true,
+    vibe: "317 shitbox",
+    image: "/products/317-shitbox-black.png",
+  },
+  {
     id: "p1",
     slug: "lot-lights-tee",
     name: "Lot Lights Tee",

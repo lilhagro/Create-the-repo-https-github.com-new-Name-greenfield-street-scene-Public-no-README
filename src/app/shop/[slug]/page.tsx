@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { AddToCartButton } from "@/components/AddToCartButton";
 import { formatPrice } from "@/modules/catalog/types";
@@ -20,7 +21,22 @@ export default async function ProductPage({
 
   return (
     <div className="detail-layout">
-      <div className={`detail-media product-swatch product-swatch--${product.category}`} />
+      {product.image ? (
+        <div className="detail-media detail-media--photo">
+          <Image
+            src={product.image}
+            alt={product.name}
+            fill
+            className="detail-media__img"
+            sizes="(max-width: 860px) 100vw, 55vw"
+            priority
+          />
+        </div>
+      ) : (
+        <div
+          className={`detail-media product-swatch product-swatch--${product.category}`}
+        />
+      )}
       <article className="detail-panel">
         <p className="eyebrow">{product.category}</p>
         <h1>{product.name}</h1>
@@ -35,6 +51,7 @@ export default async function ProductPage({
               {color}
             </span>
           ))}
+          <span className="chip">In stock</span>
         </div>
         <div className="cta-row">
           <AddToCartButton productId={product.id} />

@@ -21,6 +21,7 @@ function mapDbProduct(row: DbProduct): Product {
     colors: JSON.parse(row.colorsJson) as string[],
     featured: row.featured,
     vibe: row.vibe,
+    image: row.imageUrl ?? undefined,
   };
 }
 

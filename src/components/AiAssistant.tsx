@@ -13,7 +13,7 @@ type Message = {
 };
 
 const starters = [
-  "Night lot merch for cold weather",
+  "317 shitbox sticker",
   "Sunrise photo meet in Greenfield",
   "Cheap gift under $20",
   "Cruise meet in Hancock County",

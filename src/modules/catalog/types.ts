@@ -18,6 +18,8 @@ export type Product = {
   colors: string[];
   featured: boolean;
   vibe: string;
+  /** Public path under /public, e.g. /products/foo.png */
+  image?: string;
 };
 
 export function isProductCategory(value: string): value is ProductCategory {
