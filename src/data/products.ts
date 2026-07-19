@@ -31,8 +31,8 @@ export const products: Product[] = [
   },
   {
     id: "p2",
-    slug: "redline-stripe-hoodie",
-    name: "Redline Stripe Hoodie",
+    slug: "street-stripe-hoodie",
+    name: "Street Stripe Hoodie",
     price: 68,
     category: "hoodies",
     tagline: "Warm when the lot goes quiet.",
@@ -65,7 +65,7 @@ export const products: Product[] = [
     category: "stickers",
     tagline: "Mark the spots that mattered.",
     description:
-      "Eight die-cut stickers of lot maps, tire marks, and REDLINE marks. Laptop, toolbox, or mirror ready.",
+      "Eight die-cut stickers of lot maps, tire marks, and Greenfield Street Scene marks. Laptop, toolbox, or mirror ready.",
     tags: ["cheap", "gift", "collector", "everyday"],
     colors: ["Multi"],
     featured: false,
@@ -93,7 +93,7 @@ export const products: Product[] = [
     category: "accessories",
     tagline: "Small weight. Loud identity.",
     description:
-      "Machined aluminum key tag with REDLINE stamp. Survives pocket lint and parking lot abuse.",
+      "Machined aluminum key tag with Greenfield Street Scene stamp. Survives pocket lint and parking lot abuse.",
     tags: ["gift", "everyday", "cheap", "accessory"],
     colors: ["Raw Aluminum"],
     featured: false,

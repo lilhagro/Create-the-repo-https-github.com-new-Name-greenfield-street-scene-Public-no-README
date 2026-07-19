@@ -28,9 +28,9 @@ export function Header() {
       className={`site-header ${scrolled ? "site-header--solid" : ""}`}
     >
       <div className="site-header__inner">
-        <Link href="/" className="brand-mark" aria-label="REDLINE home">
-          <span className="brand-mark__word">REDLINE</span>
-          <span className="brand-mark__sub">MEETS · MERCH</span>
+        <Link href="/" className="brand-mark" aria-label="Greenfield Street Scene home">
+          <span className="brand-mark__word">GREENFIELD</span>
+          <span className="brand-mark__sub">STREET SCENE · MEETS · MERCH</span>
         </Link>
         <nav className="site-nav" aria-label="Primary">
           {links.map((link) => {

@@ -195,11 +195,19 @@ img {
 
 .hero__brand {
   font-family: var(--font-display);
-  font-size: clamp(4.5rem, 16vw, 10rem);
+  font-size: clamp(3.2rem, 12vw, 7.5rem);
   line-height: 0.86;
   letter-spacing: 0.02em;
   margin: 0 0 1rem;
   animation: rise-in 0.9s ease both;
+}
+
+.hero__brand-sub {
+  display: block;
+  margin-top: 0.15em;
+  font-size: 0.55em;
+  letter-spacing: 0.08em;
+  color: var(--amber);
 }
 
 .hero__headline {

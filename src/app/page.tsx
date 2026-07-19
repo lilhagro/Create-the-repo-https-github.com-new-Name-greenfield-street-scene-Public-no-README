@@ -14,7 +14,10 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero__visual" aria-hidden />
         <div className="hero__content">
-          <p className="hero__brand">REDLINE</p>
+          <p className="hero__brand">
+            GREENFIELD
+            <span className="hero__brand-sub">STREET SCENE</span>
+          </p>
           <h1 className="hero__headline">Merch for the lot. Meets for the night.</h1>
           <p className="hero__support">
             Shop the drop, find the meet, or ask the AI fit finder what to wear when the sodium lights kick on.

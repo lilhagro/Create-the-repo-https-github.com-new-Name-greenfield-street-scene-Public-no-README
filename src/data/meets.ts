@@ -69,7 +69,7 @@ export const meets: Meet[] = [
     venue: "Private warehouse yard",
     vibe: "Indoor-outdoor · builds · vendor",
     description:
-      "Covered yard meet with vendor booths, build talks, and REDLINE drop preview. Ticketed entry keeps it clean.",
+      "Covered yard meet with vendor booths, build talks, and Greenfield Street Scene drop preview. Ticketed entry keeps it clean.",
     tags: ["night", "ticketed", "vendors", "dallas", "builds"],
     capacity: "200 tickets",
     featured: false,

@@ -24,7 +24,7 @@ export function AiAssistant() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      text: "I’m the REDLINE fit finder. Ask for a meet vibe, a city, or what you want to wear to the lot.",
+      text: "I’m the Greenfield Street Scene fit finder. Ask for a meet vibe, a city, or what you want to wear to the lot.",
     },
   ]);
   const [pending, setPending] = useState(false);

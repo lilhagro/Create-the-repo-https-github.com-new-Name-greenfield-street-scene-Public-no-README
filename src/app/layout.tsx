@@ -17,9 +17,9 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "REDLINE — Car Meets & Merch",
+  title: "Greenfield Street Scene — Car Meets & Merch",
   description:
-    "AI-powered shop for car meet culture and merch. Find the right drop and the right lot.",
+    "AI-powered shop for Greenfield Street Scene — car meet culture and merch. Find the right drop and the right lot.",
 };
 
 export default function RootLayout({

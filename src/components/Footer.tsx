@@ -5,7 +5,10 @@ export function Footer() {
     <footer className="site-footer">
       <div className="site-footer__grid">
         <div>
-          <p className="brand-mark__word">REDLINE</p>
+          <p className="brand-mark__word">GREENFIELD</p>
+          <p className="brand-mark__sub" style={{ marginBottom: "0.75rem" }}>
+            STREET SCENE
+          </p>
           <p className="muted">
             Merch and meets for people who show up when the lot lights flicker on.
           </p>
@@ -26,7 +29,9 @@ export function Footer() {
           </p>
         </div>
       </div>
-      <p className="site-footer__legal">© {new Date().getFullYear()} REDLINE</p>
+      <p className="site-footer__legal">
+        © {new Date().getFullYear()} Greenfield Street Scene
+      </p>
     </footer>
   );
 }

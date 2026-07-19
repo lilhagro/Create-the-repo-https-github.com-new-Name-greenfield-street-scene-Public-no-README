@@ -1,4 +1,4 @@
-# REDLINE — AI shop for car meets & merch
+# Greenfield Street Scene — AI shop for car meets & merch
 
 Demo storefront for car-meet culture: merch catalog, meet listings, cart, and an AI fit finder that recommends products and events from natural language.
 
@@ -30,4 +30,4 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Brand
 
-**REDLINE** — night-lot asphalt palette, amber signal accents, Archivo Black + Outfit typography.
+**Greenfield Street Scene** — night-lot asphalt palette, amber signal accents, Archivo Black + Outfit typography.

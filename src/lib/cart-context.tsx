@@ -27,7 +27,7 @@ type CartContextValue = {
 };
 
 const CartContext = createContext<CartContextValue | null>(null);
-const STORAGE_KEY = "redline-cart-v1";
+const STORAGE_KEY = "greenfield-cart-v1";
 const EMPTY: CartItem[] = [];
 
 let memoryCart: CartItem[] = EMPTY;
