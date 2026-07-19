@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AddToCartButton } from "@/components/AddToCartButton";
-import { formatPrice, getProduct, products } from "@/data/products";
+import { formatPrice } from "@/modules/catalog/types";
+import { getProductBySlug, listProducts } from "@/modules/catalog/repository";
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
+  const products = await listProducts();
   return products.map((product) => ({ slug: product.slug }));
 }
 
@@ -13,7 +15,7 @@ export default async function ProductPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const product = getProduct(slug);
+  const product = await getProductBySlug(slug);
   if (!product) notFound();
 
   return (

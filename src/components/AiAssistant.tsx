@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import type { Meet } from "@/data/meets";
-import { formatPrice, type Product } from "@/data/products";
+import { formatPrice, type Product } from "@/modules/catalog/types";
+import type { Meet } from "@/modules/meets/types";
 
 type Message = {
   role: "user" | "assistant";

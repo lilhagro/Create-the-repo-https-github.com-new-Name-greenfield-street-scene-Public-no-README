@@ -2,12 +2,14 @@ import Link from "next/link";
 import { AiAssistant } from "@/components/AiAssistant";
 import { MeetCard } from "@/components/MeetCard";
 import { ProductCard } from "@/components/ProductCard";
-import { meets } from "@/data/meets";
-import { products } from "@/data/products";
+import { listFeaturedMeets } from "@/modules/meets/repository";
+import { listFeaturedProducts } from "@/modules/catalog/repository";
 
-export default function HomePage() {
-  const featuredProducts = products.filter((p) => p.featured).slice(0, 4);
-  const featuredMeets = meets.filter((m) => m.featured).slice(0, 3);
+export default async function HomePage() {
+  const [featuredProducts, featuredMeets] = await Promise.all([
+    listFeaturedProducts(4),
+    listFeaturedMeets(3),
+  ]);
 
   return (
     <>

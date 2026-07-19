@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { formatPrice } from "@/data/products";
-import { useCart } from "@/lib/cart-context";
+import { formatPrice } from "@/modules/catalog/types";
+import { useCart } from "@/modules/commerce/cart-context";
 
 export default function CartPage() {
   const { lines, subtotal, setQuantity, removeItem, clear, count } = useCart();

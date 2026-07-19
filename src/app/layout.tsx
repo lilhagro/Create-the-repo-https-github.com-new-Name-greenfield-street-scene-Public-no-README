@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Archivo_Black, Outfit } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { CartProvider } from "@/lib/cart-context";
+import { CartProvider } from "@/modules/commerce/cart-context";
 import "./globals.css";
 
 const archivoBlack = Archivo_Black({

@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getMeet, meets } from "@/data/meets";
+import { getMeetBySlug, listMeets } from "@/modules/meets/repository";
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
+  const meets = await listMeets();
   return meets.map((meet) => ({ slug: meet.slug }));
 }
 
@@ -12,7 +13,7 @@ export default async function MeetDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const meet = getMeet(slug);
+  const meet = await getMeetBySlug(slug);
   if (!meet) notFound();
 
   return (

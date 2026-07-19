@@ -1,7 +1,9 @@
 import { MeetCard } from "@/components/MeetCard";
-import { meets } from "@/data/meets";
+import { listMeets } from "@/modules/meets/repository";
 
-export default function MeetsPage() {
+export default async function MeetsPage() {
+  const meets = await listMeets();
+
   return (
     <>
       <header className="page-hero">

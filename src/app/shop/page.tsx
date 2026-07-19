@@ -1,7 +1,9 @@
 import { ProductCard } from "@/components/ProductCard";
-import { products } from "@/data/products";
+import { listProducts } from "@/modules/catalog/repository";
 
-export default function ShopPage() {
+export default async function ShopPage() {
+  const products = await listProducts();
+
   return (
     <>
       <header className="page-hero">

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { Meet } from "@/data/meets";
+import type { Meet } from "@/modules/meets/types";
 
 export function MeetCard({ meet }: { meet: Meet }) {
   return (

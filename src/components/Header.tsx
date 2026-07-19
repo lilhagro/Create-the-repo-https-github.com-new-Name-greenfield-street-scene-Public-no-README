@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { useCart } from "@/lib/cart-context";
+import { useCart } from "@/modules/commerce/cart-context";
 
 const links = [
   { href: "/shop", label: "Shop" },

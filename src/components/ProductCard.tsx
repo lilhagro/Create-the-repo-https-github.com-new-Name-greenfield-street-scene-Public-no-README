@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { formatPrice, type Product } from "@/data/products";
 import { AddToCartButton } from "@/components/AddToCartButton";
+import { formatPrice, type Product } from "@/modules/catalog/types";
 
 export function ProductCard({ product }: { product: Product }) {
   return (
