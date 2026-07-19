@@ -702,6 +702,22 @@ img {
   color: var(--muted);
 }
 
+.checkout-box {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 0.75rem;
+  max-width: 28rem;
+}
+
+.checkout-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 @keyframes rise-in {
   from {
     opacity: 0;

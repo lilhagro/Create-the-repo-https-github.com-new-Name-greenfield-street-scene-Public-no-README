@@ -39,12 +39,19 @@ src/
 - v1 = deterministic ranking over catalog + meets.
 - Later: embeddings, LLM rerank, user preference memory — same API.
 
+## Commerce
+
+- `POST /api/checkout` creates a PENDING order and either:
+  - redirects to **Stripe Checkout** when `STRIPE_SECRET_KEY` is set, or
+  - returns **demo mode** success when Stripe isn’t configured
+- `POST /api/webhooks/stripe` marks orders PAID on `checkout.session.completed`
+
 ## Scale path (next layers)
 
 | Phase | Add |
 | --- | --- |
-| Now | Modules + Prisma + Auth skeleton |
-| Next | Postgres on Neon, Stripe checkout, Meet RSVP |
+| Now | Modules + Prisma + Auth + Stripe checkout path |
+| Next | Neon Postgres, Meet RSVP, real product images |
 | Then | Vendor accounts, search, image CDN, admin |
 | Later | Feeds/social, notifications, multi-region |
 
