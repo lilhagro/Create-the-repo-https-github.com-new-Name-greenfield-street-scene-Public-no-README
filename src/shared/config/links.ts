@@ -1,4 +1,4 @@
-/** Brand destinations */
+/** Brand destinations — keep these stable across visual refreshes */
 
 /** Primary merch shop on this site (stickers + in-stock) */
 export const MERCH_SHOP_URL = "/shop";
@@ -7,6 +7,6 @@ export const MERCH_SHOP_URL = "/shop";
 export const SITE_URL =
   "https://create-the-repo-https-github-com-ne.vercel.app";
 
-/** Optional Printify POD catalog (store slug currently uses Printify's live spelling) */
+/** Printify POD catalog (live store slug) */
 export const PRINTIFY_STORE_URL =
   "https://greenfeild-street-scene.printify.me";
