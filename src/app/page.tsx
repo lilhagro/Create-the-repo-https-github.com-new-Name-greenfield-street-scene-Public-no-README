@@ -17,7 +17,10 @@ export default async function HomePage() {
       <section className="hero">
         <div className="hero__visual" aria-hidden />
         <div className="hero__content">
-          <p className="hero__brand">Greenfield Street Scene</p>
+          <p className="hero__brand">
+            GREENFIELD
+            <span className="hero__brand-sub">STREET SCENE</span>
+          </p>
           <h1 className="hero__headline">Merch for the lot. Meets for the night.</h1>
           <p className="hero__support">
             Born in Greenfield, Indiana — shop the drop, find the local meet, or ask AI Fit what to wear when the lot lights kick on.
