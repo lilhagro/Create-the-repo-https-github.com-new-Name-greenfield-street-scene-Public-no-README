@@ -4,10 +4,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useCart } from "@/modules/commerce/cart-context";
-import { PRINTIFY_STORE_URL } from "@/shared/config/links";
+import { MERCH_SHOP_URL } from "@/shared/config/links";
 
 const links = [
-  { href: "/shop", label: "Stickers" },
+  { href: MERCH_SHOP_URL, label: "Merch" },
   { href: "/meets", label: "Meets" },
   { href: "/#assistant", label: "AI Fit" },
 ];
@@ -47,13 +47,6 @@ export function Header() {
               </Link>
             );
           })}
-          <a
-            href={PRINTIFY_STORE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Merch
-          </a>
           <Link href="/cart" className="cart-link">
             Cart
             <span className="cart-count">{count}</span>

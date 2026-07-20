@@ -9,23 +9,23 @@ export default async function ShopPage() {
   return (
     <>
       <header className="page-hero">
-        <p className="eyebrow">Shop</p>
-        <h1>In-stock from Greenfield</h1>
+        <p className="eyebrow">Merch</p>
+        <h1>Shop Greenfield Street Scene</h1>
         <p>
-          Stickers we have on hand ship direct. For the full tee and hoodie lineup, hit the Printify store.
+          In-stock stickers ship from Greenfield, Indiana. Add to cart and checkout here.
         </p>
         <div className="cta-row" style={{ marginTop: "1.25rem" }}>
+          <Link href="/cart" className="btn btn-primary">
+            View cart
+          </Link>
           <a
             href={PRINTIFY_STORE_URL}
-            className="btn btn-primary"
+            className="btn btn-ghost"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Shop Printify merch
+            More on Printify
           </a>
-          <Link href="/#assistant" className="btn btn-ghost">
-            Ask AI Fit
-          </Link>
         </div>
       </header>
       <section className="section" style={{ paddingTop: "1.5rem" }}>
