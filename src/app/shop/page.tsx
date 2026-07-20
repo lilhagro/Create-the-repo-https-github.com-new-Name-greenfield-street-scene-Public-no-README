@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ProductCard } from "@/components/ProductCard";
 import { listProducts } from "@/modules/catalog/repository";
-import { PRINTIFY_STORE_URL } from "@/shared/config/links";
+import { MERCH_SHOP_URL } from "@/shared/config/links";
 
 export default async function ShopPage() {
   const products = await listProducts();
@@ -9,23 +9,23 @@ export default async function ShopPage() {
   return (
     <>
       <header className="page-hero">
-        <p className="eyebrow">Merch</p>
-        <h1>Shop Greenfield Street Scene</h1>
+        <p className="eyebrow">In-stock</p>
+        <h1>Stickers from Greenfield</h1>
         <p>
-          In-stock stickers ship from Greenfield, Indiana. Add to cart and checkout here.
+          Local inventory you can cart here. For the full tee and hoodie lineup, shop our Printify store.
         </p>
         <div className="cta-row" style={{ marginTop: "1.25rem" }}>
-          <Link href="/cart" className="btn btn-primary">
-            View cart
-          </Link>
           <a
-            href={PRINTIFY_STORE_URL}
-            className="btn btn-ghost"
+            href={MERCH_SHOP_URL}
+            className="btn btn-primary"
             target="_blank"
             rel="noopener noreferrer"
           >
-            More on Printify
+            Shop Printify merch
           </a>
+          <Link href="/cart" className="btn btn-ghost">
+            View cart
+          </Link>
         </div>
       </header>
       <section className="section" style={{ paddingTop: "1.5rem" }}>

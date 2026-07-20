@@ -4,7 +4,7 @@ import { MeetCard } from "@/components/MeetCard";
 import { ProductCard } from "@/components/ProductCard";
 import { listFeaturedMeets } from "@/modules/meets/repository";
 import { listFeaturedProducts } from "@/modules/catalog/repository";
-import { MERCH_SHOP_URL, PRINTIFY_STORE_URL } from "@/shared/config/links";
+import { LOCAL_SHOP_URL, MERCH_SHOP_URL } from "@/shared/config/links";
 
 export default async function HomePage() {
   const [featuredProducts, featuredMeets] = await Promise.all([
@@ -26,8 +26,16 @@ export default async function HomePage() {
             Born in Greenfield, Indiana — shop the drop, find the local meet, or ask AI Fit what to wear when the lot lights kick on.
           </p>
           <div className="cta-row">
-            <Link href={MERCH_SHOP_URL} className="btn btn-primary">
+            <a
+              href={MERCH_SHOP_URL}
+              className="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Shop merch
+            </a>
+            <Link href={LOCAL_SHOP_URL} className="btn btn-ghost">
+              In-stock stickers
             </Link>
             <Link href="/meets" className="btn btn-ghost">
               Browse meets
@@ -41,7 +49,7 @@ export default async function HomePage() {
           <p className="eyebrow">Featured drop</p>
           <h2>Built for asphalt hours</h2>
           <p className="lede">
-            In-stock stickers ship from Greenfield. More merch also available on Printify.
+            Full merch runs through our Printify store. In-stock stickers ship direct from Greenfield.
           </p>
         </div>
         <div className="product-grid">
@@ -50,17 +58,17 @@ export default async function HomePage() {
           ))}
         </div>
         <div className="cta-row" style={{ marginTop: "1.5rem" }}>
-          <Link href={MERCH_SHOP_URL} className="btn btn-primary">
-            Open merch shop
-          </Link>
           <a
-            href={PRINTIFY_STORE_URL}
-            className="btn btn-ghost"
+            href={MERCH_SHOP_URL}
+            className="btn btn-primary"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Printify catalog
+            Open Printify shop
           </a>
+          <Link href={LOCAL_SHOP_URL} className="btn btn-ghost">
+            Local stickers
+          </Link>
         </div>
       </section>
 

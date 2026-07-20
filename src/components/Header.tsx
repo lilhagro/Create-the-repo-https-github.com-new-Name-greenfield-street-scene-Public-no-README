@@ -4,13 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useCart } from "@/modules/commerce/cart-context";
-import { MERCH_SHOP_URL } from "@/shared/config/links";
-
-const links = [
-  { href: MERCH_SHOP_URL, label: "Merch" },
-  { href: "/meets", label: "Meets" },
-  { href: "/#assistant", label: "AI Fit" },
-];
+import { LOCAL_SHOP_URL, MERCH_SHOP_URL } from "@/shared/config/links";
 
 export function Header() {
   const pathname = usePathname();
@@ -34,19 +28,32 @@ export function Header() {
           <span className="brand-mark__sub">GREENFIELD, IN · MEETS · MERCH</span>
         </Link>
         <nav className="site-nav" aria-label="Primary">
-          {links.map((link) => {
-            const active =
-              link.href !== "/#assistant" && pathname.startsWith(link.href);
-            return (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={active ? "is-active" : undefined}
-              >
-                {link.label}
-              </Link>
-            );
-          })}
+          <a
+            href={MERCH_SHOP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="is-active-external"
+          >
+            Merch
+          </a>
+          <Link
+            href={LOCAL_SHOP_URL}
+            className={pathname.startsWith("/shop") ? "is-active" : undefined}
+          >
+            Stickers
+          </Link>
+          <Link
+            href="/meets"
+            className={pathname.startsWith("/meets") ? "is-active" : undefined}
+          >
+            Meets
+          </Link>
+          <Link
+            href="/#assistant"
+            className={undefined}
+          >
+            AI Fit
+          </Link>
           <Link href="/cart" className="cart-link">
             Cart
             <span className="cart-count">{count}</span>

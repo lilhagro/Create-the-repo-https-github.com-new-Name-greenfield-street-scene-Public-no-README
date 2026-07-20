@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MERCH_SHOP_URL, PRINTIFY_STORE_URL } from "@/shared/config/links";
+import { LOCAL_SHOP_URL, MERCH_SHOP_URL } from "@/shared/config/links";
 
 export function Footer() {
   return (
@@ -17,10 +17,10 @@ export function Footer() {
         <div>
           <p className="footer-label">Navigate</p>
           <div className="footer-links">
-            <Link href={MERCH_SHOP_URL}>Merch shop</Link>
-            <a href={PRINTIFY_STORE_URL} target="_blank" rel="noopener noreferrer">
-              Printify
+            <a href={MERCH_SHOP_URL} target="_blank" rel="noopener noreferrer">
+              Merch (Printify)
             </a>
+            <Link href={LOCAL_SHOP_URL}>In-stock stickers</Link>
             <Link href="/meets">Meets</Link>
             <Link href="/cart">Cart</Link>
             <Link href="/#assistant">AI Fit</Link>
