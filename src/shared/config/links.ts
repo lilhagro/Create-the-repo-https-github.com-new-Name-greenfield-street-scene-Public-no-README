@@ -7,6 +7,6 @@ export const MERCH_SHOP_URL = "/shop";
 export const SITE_URL =
   "https://create-the-repo-https-github-com-ne.vercel.app";
 
-/** Optional Printify POD catalog */
+/** Optional Printify POD catalog (store slug currently uses Printify's live spelling) */
 export const PRINTIFY_STORE_URL =
-  "https://greenfield-street-scene.printify.me";
+  "https://greenfeild-street-scene.printify.me";
