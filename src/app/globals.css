@@ -15,7 +15,8 @@
   --radius: 2px;
   --font-display: var(--font-display-family), Impact, sans-serif;
   --font-body: var(--font-body-family), "Segoe UI", sans-serif;
-  --brand-bg: url("/brand/gss-logo-bg.png");
+  --brand-bg: url("/brand/gss-meet-bg.jpg");
+  --brand-logo: url("/brand/gss-logo-bg.png");
 }
 
 @theme inline {
@@ -37,12 +38,12 @@ body {
   min-height: 100%;
   color: var(--ink);
   font-family: var(--font-body);
-  background-color: #000;
+  background-color: #0a0a0a;
   background-image:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.78) 45%, rgba(0, 0, 0, 0.94) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.62) 40%, rgba(0, 0, 0, 0.9) 100%),
     var(--brand-bg);
   background-size: cover;
-  background-position: center top;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -180,8 +181,8 @@ img {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.35) 40%, rgba(0, 0, 0, 0.88) 100%),
-    var(--brand-bg) center center / cover no-repeat;
+    linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.45) 50%, rgba(0, 0, 0, 0.88) 100%),
+    var(--brand-bg) center 40% / cover no-repeat;
   transform: scale(1.03);
   animation: hero-drift 18s ease-in-out infinite alternate;
 }
